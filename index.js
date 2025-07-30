@@ -17,6 +17,10 @@ app.use(
   })
 );
 
+app.get("/" , (req , res) =>{
+  res.status(200).send("server will run now!");
+})
+
 const UserRoutes = require("./routes/user");
 const postRoutes = require("./routes/post");
 const NotificationRoutes = require("./routes/notification");
