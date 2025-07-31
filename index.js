@@ -13,7 +13,7 @@ app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
-    origin: "https://reactlinkdin.netlify.app/",
+    origin: ["http://localhost:5000", "https://reactlinkdin.netlify.app/"]
   })
 );
 
